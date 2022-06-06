@@ -47,7 +47,7 @@ jobs:
       steps:
         - name: Verify test passed
           if: success()
-          run: echo "Tests ${{ github.name }}passed"
+          run: echo "Tests ${{ passed }} passed"
         - name: Verify test failed
           if: failure()
           run: echo "Tests failed"
