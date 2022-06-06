@@ -47,7 +47,7 @@ jobs:
       steps:
         - name: Verify test passed
           if: success()
-          run: echo "Tests ${{ passed }} passed"
+          run: echo "Tests passed"
         - name: Verify test failed
           if: failure()
           run: echo "Tests failed"
