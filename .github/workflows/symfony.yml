@@ -46,8 +46,8 @@ jobs:
       needs: symfony-tests
       steps:
         - name: Verify test passed
-          if: ${{ succeed() }}
+          if: success()
           run: echo "Tests ${{ github.name }}passed"
         - name: Verify test failed
-          if: ${{ failed() }}
+          if: failure()
           run: echo "Tests failed"
